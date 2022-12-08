@@ -19,3 +19,6 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Cover Image", name: "cover_image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { name: "published", widget: "hidden", default: false }
+      - { name: "series", widget: "hidden", default: false }
+      - { name: "canonical_url", widget: "hidden", default: false }
