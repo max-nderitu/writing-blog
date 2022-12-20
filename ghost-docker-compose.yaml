@@ -4,6 +4,8 @@ services:
   ghost:
     image: ghost:5-alpine
     restart: always
+    volumes:
+      - ghost-content:/var/lib/ghost/content
     ports:
       - 80:2368
     environment:
@@ -26,4 +28,5 @@ services:
       MYSQL_ROOT_PASSWORD: rCGiq98Si6tW
   
 volumes:
+  ghost-content:
   db-data:
