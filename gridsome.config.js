@@ -5,8 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Concepts / Ideas / Stories',
-  siteDescription: 'A collections of thoughts, ideas and wonderfully rookie storytelling',
+  siteName: 'Gridsome Blog Starter',
+  siteDescription: 'A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.',
 
   templates: {
     Post: '/:title',
@@ -27,12 +27,6 @@ module.exports = {
             create: true
           }
         }
-      }
-    },
-    {
-      use: `gridsome-plugin-netlify-cms`,
-      options: {
-        publicPath: `/admin`
       }
     }
   ],

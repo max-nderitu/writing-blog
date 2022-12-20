@@ -1,0 +1,29 @@
+version: '3.1'
+
+services:
+  ghost:
+    image: ghost:5-alpine
+    restart: always
+    ports:
+      - 80:2368
+    environment:
+      # see https://ghost.org/docs/config/#configuration-options
+      database__client: mysql
+      database__connection__host: db
+      database__connection__user: root
+      database__connection__password: rCGiq98Si6tW
+      database__connection__database: ghost
+      url: https://maxvamp.space
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    restart: always
+    volumes:
+      - db-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rCGiq98Si6tW
+  
+volumes:
+  db-data:
