@@ -15,6 +15,9 @@ module.exports = {
 
   plugins: [
     {
+      use: 'gridsome-plugin-plausible'
+    },
+    {
       use: '@gridsome/source-ghost',
       options: {
         baseUrl: 'http://139.59.49.219',

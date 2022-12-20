@@ -13,6 +13,7 @@
     "@gridsome/source-ghost": "^0.4.0",
     "@gridsome/transformer-remark": "^0.3.0",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-plausible": "^0.0.1",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
