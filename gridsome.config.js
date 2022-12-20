@@ -17,8 +17,8 @@ module.exports = {
     {
       use: '@gridsome/source-ghost',
       options: {
-        baseUrl: 'https://simple-idea.ghost.io',
-        contentKey: 'bfea7d2ded2a625180005b0b93',
+        baseUrl: 'http://139.59.49.219',
+        contentKey: 'cccc2549a5960be2618a8beba0',
         routes: {
           post: '/:slug',
           page: '/:slug'
