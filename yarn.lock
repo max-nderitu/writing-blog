@@ -4604,13 +4604,6 @@ gray-matter@^4.0.2:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
-gridsome-plugin-plausible@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/gridsome-plugin-plausible/-/gridsome-plugin-plausible-0.0.1.tgz#3acb3f0e9e8344348a0b576eaebd5c7fd4b9ab7d"
-  integrity sha512-BDHA1V4T3BMrv21yS2KiW3ld4X9q6iFM1QVY5tlk+GajCpYUnq8wGtXkOCNWpWQsKoElk37auteHcH1Fd1NLpw==
-  dependencies:
-    plausible-vue "^0.0.1"
-
 gridsome@^0.7.0:
   version "0.7.23"
   resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.23.tgz#d8b06bdf6b4ed06411be3ec3696324f29c83063e"
@@ -7176,13 +7169,6 @@ pkg-dir@^3.0.0:
   integrity sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==
   dependencies:
     find-up "^3.0.0"
-
-plausible-vue@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/plausible-vue/-/plausible-vue-0.0.1.tgz#a5f657d920e5f059a12636da77a3d45aed4a7096"
-  integrity sha512-NsLz3Cr1of6mfSourNHgfiiwO+ohOcsj5t5QTLY0reMzHznW86Hdv0ojxB8HSpBofx6XzXoE06/L99RyU4XA7Q==
-  dependencies:
-    vue "^2.6.10"
 
 pngquant-bin@^5.0.0:
   version "5.0.2"
