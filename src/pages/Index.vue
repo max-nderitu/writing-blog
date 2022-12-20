@@ -25,7 +25,7 @@
         path
         slug
         id
-        coverImage: feature_image
+        cover_image: feature_image
       }
     }
   }

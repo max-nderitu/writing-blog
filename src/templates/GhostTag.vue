@@ -11,19 +11,22 @@
 </template>
 
 <page-query>
-query Tag ($id: ID!) {
-  tag (id: $id) {
-    title
+query Tag ($path: String!) {
+  tag:ghostTag (path: $path) {
+    title: name
+    slug
+    path
     belongsTo {
       edges {
         node {
-          ...on Post {
+          ...on GhostPost {
             title
             path
-            date (format: "D. MMMM YYYY")
-            timeToRead
-            description
-            content
+            date: published_at (format: "D. MMMM YYYY")
+            description: excerpt
+            coverImage: feature_image
+            content: html
+            slug
           }
         }
       }

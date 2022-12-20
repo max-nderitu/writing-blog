@@ -9,8 +9,8 @@ module.exports = {
   siteDescription: 'Thoughts, stories and ideas. I know original',
 
   templates: {
-    Post: '/:title',
-    Tag: '/tag/:id'
+    GhostPost: '/:title',
+    GhostTag: '/tag/:id'
   },
 
   plugins: [

@@ -67,7 +67,7 @@ query Post ($path: String!) {
     }
     description: excerpt
     content: html
-    coverImage: feature_image
+    cover_image: feature_image
   }
 }
 </page-query>
