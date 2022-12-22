@@ -7,7 +7,7 @@ services:
     volumes:
       - ghost-content:/var/lib/ghost/content
     ports:
-      - 80:2368
+      - "80:2368"
     environment:
       # see https://ghost.org/docs/config/#configuration-options
       database__client: mysql
@@ -26,7 +26,7 @@ services:
       - db-data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: rCGiq98Si6tW
-  
+
 volumes:
   ghost-content:
   db-data:
