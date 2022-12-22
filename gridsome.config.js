@@ -17,7 +17,7 @@ module.exports = {
     {
       use: '@gridsome/source-ghost',
       options: {
-        baseUrl: 'http://maxvamp.com',
+        baseUrl: 'https://ghost.maxvamp.com',
         contentKey: '0c65d6d1a23b547a0150da6462',
         routes: {
           post: '/:slug',
