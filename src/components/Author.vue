@@ -8,7 +8,7 @@
 		</h1>
 
 		<p class="author__intro">
-      Thoughts, stories and ideas. I know original
+      Just stories for now
 		</p>
 
 		<p class="author__links">
