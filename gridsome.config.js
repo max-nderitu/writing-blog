@@ -5,8 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Blog with Stories',
-  siteDescription: 'Thoughts, stories and ideas. I know original',
+  siteName: 'Above meeh stories',
+  siteDescription: 'Just stories for now',
 
   templates: {
     GhostPost: '/:title',
