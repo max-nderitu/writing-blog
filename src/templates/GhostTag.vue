@@ -45,7 +45,7 @@ export default {
     PostCard
   },
   metaInfo: {
-    title: $page.tag.title
+    title: `Story time`
   }
 }
 </script>
