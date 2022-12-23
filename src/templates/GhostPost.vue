@@ -64,6 +64,7 @@ query Post ($path: String!) {
       id
       title: name
       path
+      slug
     }
     description: excerpt
     content: html
