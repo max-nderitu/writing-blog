@@ -19,7 +19,7 @@ services:
 
     environment:
       - REMARK_URL=http://maxvamp.com:9090
-      - SECRET=12345
+      - SECRET=S09cNvJ6Xcl5lfCt7jP0
       - SITE=vampstories
       - DEBUG=true
       - EMOJI=true
