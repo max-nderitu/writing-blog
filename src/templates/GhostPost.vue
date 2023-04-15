@@ -22,7 +22,8 @@
     </div>
 
     <div class="post-comments">
-        <div id="remark42"></div>
+        <!--        Disable comments for now-->
+        <!--        <div id="remark42"></div>-->
     </div>
 
     <Author class="post-author" />
