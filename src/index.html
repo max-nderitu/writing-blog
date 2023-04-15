@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html ${htmlAttrs}>
-  <head>
+<head>
     ${head}
-  </head>
-  <body ${bodyAttrs}>
-  <script defer data-domain="vampstories.space" src="https://analytics.maxvamp.com/js/script.js"></script>
-  <script>
-  </script>
-  <script>
-      // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
-      (function() {
-        window.__onThemeChange = function() {};
+    <script>
+        var remark_config = {
+            host: 'http://maxvamp.com:9090',
+            site_id: 'vampstories',
+        }
+    </script>
+    <script>!function (e, n) {
+        for (var o = 0; o < e.length; o++) {
+            var r = n.createElement("script"), c = ".js", d = n.head || n.body;
+            "noModule" in r ? (r.type = "module", c = ".mjs") : r.async = !0, r.defer = !0, r.src = remark_config.host + "/web/" + e[o] + c, d.appendChild(r)
+        }
+    }(remark_config.components || ["embed"], document);</script>
+</head>
+<body ${bodyAttrs}>
+<script defer data-domain="vampstories.space" src="https://analytics.maxvamp.com/js/script.js"></script>
+<script>
+    // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
+    (function () {
+        window.__onThemeChange = function () {
+        };
+
         function setTheme(newTheme) {
-          window.__theme = newTheme;
-          preferredTheme = newTheme;
-          document.body.setAttribute('data-theme', newTheme);
-          window.__onThemeChange(newTheme);
+            window.__theme = newTheme;
+            preferredTheme = newTheme;
+            document.body.setAttribute('data-theme', newTheme);
+            window.__onThemeChange(newTheme);
         }
 
         var preferredTheme;
         try {
-          preferredTheme = localStorage.getItem('theme');
-        } catch (err) { }
+            preferredTheme = localStorage.getItem('theme');
+        } catch (err) {
+        }
 
-        window.__setPreferredTheme = function(newTheme) {
-          setTheme(newTheme);
-          try {
-            localStorage.setItem('theme', newTheme);
-          } catch (err) {}
+        window.__setPreferredTheme = function (newTheme) {
+            setTheme(newTheme);
+            try {
+                localStorage.setItem('theme', newTheme);
+            } catch (err) {
+            }
         }
 
         var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        darkQuery.addListener(function(e) {
-          window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+        darkQuery.addListener(function (e) {
+            window.__setPreferredTheme(e.matches ? 'dark' : 'light')
         });
 
         setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
-      })();
-    </script>
-    ${app}
-    ${scripts}
-  </body>
+    })();
+</script>
+${app}
+${scripts}
+</body>
 </html>

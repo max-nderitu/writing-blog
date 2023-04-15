@@ -20,14 +20,12 @@ services:
     environment:
       - REMARK_URL=http://maxvamp.com:9090
       - SECRET=12345
+      - SITE=vampstories
       - DEBUG=true
       - EMOJI=true
+      - AUTH_ANON=true
       - ANON_VOTE=true
       - VOTES_IP=true
-      - AUTH_ANON=true
-      - AUTH_GITHUB_CID=ddd5bf53b81e92a9553f
-      - AUTH_GITHUB_CSEC=1f07a2a79415807230969c180d426154bf0e2f11
-      - ADMIN_SHARED_ID=github_9313a59827d45d4c0d1629d7623195fbf5d86789
 
     volumes:
       - ./var:/srv/var

@@ -22,7 +22,7 @@
     </div>
 
     <div class="post-comments">
-      <!-- Add comment widgets here -->
+        <div id="remark42"></div>
     </div>
 
     <Author class="post-author" />
@@ -118,7 +118,8 @@ query Post ($path: String!) {
 }
 
 .post-comments {
-  padding: calc(var(--space) / 2);
+  margin: 10px auto;
+  max-width: var(--content-width);
 
   &:empty {
     display: none;
