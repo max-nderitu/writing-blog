@@ -18,7 +18,7 @@ services:
       - "9090:8080"
 
     environment:
-      - REMARK_URL=http://maxvamp.com:9090
+      - REMARK_URL=https://remark.maxvamp.com
       - SECRET=S09cNvJ6Xcl5lfCt7jP0
       - SITE=vampstories
       - DEBUG=true

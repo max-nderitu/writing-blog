@@ -8,7 +8,7 @@ maxvamp.com
 ```
 and sub domains (As A records under the maxvamp.com domain)
 ```text
-analytics.maxvamp.com ghost.maxvamp.com
+analytics.maxvamp.com ghost.maxvamp.com remark.maxvamp.com
 ```
 
 # Install nginx
@@ -53,3 +53,15 @@ sudo crontab -e
  15 3 * * * /usr/bin/certbot renew --quiet
 ```
 
+# To add a new domain 
+```shell
+sudo certbot certonly --expand -d maxvamp.com,remark.maxvamp.com
+```
+and the afterwards rerun 
+```shell
+sudo certbot --nginx
+```
+and then
+```shell
+sudo service nginx restart
+```
