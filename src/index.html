@@ -8,12 +8,7 @@
             site_id: 'vampstories',
         }
     </script>
-    <script>!function (e, n) {
-        for (var o = 0; o < e.length; o++) {
-            var r = n.createElement("script"), c = ".js", d = n.head || n.body;
-            "noModule" in r ? (r.type = "module", c = ".mjs") : r.async = !0, r.defer = !0, r.src = remark_config.host + "/web/" + e[o] + c, d.appendChild(r)
-        }
-    }(remark_config.components || ["embed"], document);</script>
+    <script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
 </head>
 <body ${bodyAttrs}>
 <script defer data-domain="vampstories.space" src="https://analytics.maxvamp.com/js/script.js"></script>
@@ -54,6 +49,16 @@
 
         setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
     })();
+</script>
+<script defer="defer">
+    if (window.REMARK42) {
+        try {
+            configuredTheme = localStorage.getItem('theme');
+            window.REMARK42.changeTheme(configuredTheme)
+        } catch (err) {
+            console.error(err)
+        }
+    }
 </script>
 ${app}
 ${scripts}
