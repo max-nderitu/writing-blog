@@ -26,6 +26,8 @@ services:
       - AUTH_ANON=true
       - ANON_VOTE=true
       - VOTES_IP=true
+      - ALLOWED_HOSTS='self',vampstories.space
+      - AUTH_SAME_SITE=none
 
     volumes:
       - ./var:/srv/var
