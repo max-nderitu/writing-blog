@@ -28,6 +28,9 @@ services:
       - VOTES_IP=true
       - ALLOWED_HOSTS='self',vampstories.space
       - AUTH_SAME_SITE=none
+      - AUTH_GITHUB_CID=ddd5bf53b81e92a9553f
+      - AUTH_GITHUB_CSEC=1f07a2a79415807230969c180d426154bf0e2f11
+      - ADMIN_SHARED_ID=github_9313a59827d45d4c0d1629d7623195fbf5d86789
 
     volumes:
       - ./var:/srv/var
